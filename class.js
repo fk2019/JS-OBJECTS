@@ -13,4 +13,20 @@ class Dog {
 
 let dog = new Dog('Johnny','Black')
 
-console.log(dog.bark())
+let goat = Object.create(Object.prototype,
+    {
+        name: {
+            value: 'Jecinta',
+            enumerable: true,
+            writable: true,
+            configurable: true
+        },
+        color: {
+            value:'White',
+            enumerable: true,
+            writable:true,
+            configurable:true
+        }
+    })
+
+    console.log(goat.name)
